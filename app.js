@@ -1,6 +1,3 @@
-
-
-
 // Task manager: create, edit, delete, complete, and restore tasks.
 var taskInput=document.getElementById("new-task");
 var addButton=document.getElementsByTagName("button")[0];
