@@ -32,19 +32,23 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .task-row-wrapper {
   display: flex;
 }
+
 .list {
   margin:0;
   padding: 0px;
 }
-li, .title {
+
+.list__elem, .title {
   list-style: none;
 }
 input,button{
@@ -110,6 +114,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+
 li > * {
   vertical-align: middle;
 }
