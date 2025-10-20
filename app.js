@@ -134,7 +134,7 @@ var taskIncomplete=function(){
   //Append the task list item to the #incompleteTasks.
   var listItem=this.parentNode;
   incompleteTaskHolder.appendChild(listItem);
-  bindTaskEvents(listItem,taskCompleted);
+  bindTaskEvents(listItem, taskCompleted);
 }
 
 
@@ -148,8 +148,8 @@ var ajaxRequest=function(){
 
 //Set the click handler to the addTask function.
 addButton.onclick=addTask;
-addButton.addEventListener("click",addTask);
-addButton.addEventListener("click",ajaxRequest);
+addButton.addEventListener("click", addTask);
+addButton.addEventListener("click", ajaxRequest);
 
 
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
@@ -173,7 +173,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
   //bind events to list items chldren(tasksCompleted)
-  bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
+  bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
 }
 
 
