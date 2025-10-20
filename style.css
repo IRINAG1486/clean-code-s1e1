@@ -51,9 +51,10 @@ body {
 .list__elem, .title {
   list-style: none;
 }
-input .button{
+.task-input .button{
   outline: none;
 }
+
 button {
   background: none;
   border: 0px;
@@ -68,7 +69,6 @@ button {
 }
 /* Heading */
 .title {
-
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -81,7 +81,7 @@ button {
   margin: 0 0 20px;
 }
 
-input[type="text"] {
+input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -93,14 +93,15 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+
+.task-input:focus {
   color: #333;
 }
 
 /* New Task */
 
 
-input#new-task {
+.task-new {
   width: 318px;
 }
 
@@ -128,7 +129,7 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+li >    .task-input {
   width: 226px
 }
 
@@ -152,11 +153,11 @@ li >    input[type="text"] {
   display: none;
 }
 
-.list li.editMode input[type="text"] {
+.list .editMode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.list li.editMode label {
+.list .editMode label {
 display: none;
 }
